@@ -1,12 +1,12 @@
 import Navigation from './components/Navigation';
 import './App.css';
-import Player from './components/Players';
-import Footer from './Footer';
+import Main from './components/Main';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className='App'>
       <Navigation/>
-      <Player/>
+      <Main/>
       <Footer/>
     </div>
   );
