@@ -1,0 +1,19 @@
+{
+  "name": "exerciseferm201m",
+  "version": "1.0.0",
+  "description": "This is homework from teacher",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dattq2002/Fer201m.git"
+  },
+  "author": "TrangQuocDat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dattq2002/Fer201m/issues"
+  },
+  "homepage": "https://github.com/dattq2002/Fer201m#readme"
+}
