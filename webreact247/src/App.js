@@ -1,6 +1,6 @@
 import Navigation from './components/Navigation';
 import './App.css';
-import Player from './components/player';
+import Player from './components/Players';
 import Footer from './Footer';
 function App() {
   return (
