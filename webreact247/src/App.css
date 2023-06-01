@@ -32,58 +32,67 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-div.title{
+
+div.title {
   background-color: black;
   text-align: left;
   padding: 10px 0px;
 }
 
-.back-ground {
+/* .back-ground {
   background-color: black;
   text-align: left;
   padding: 20px 0px;
-}
+} */
+
 .active {
-  color: aliceblue;
+  /* color: aliceblue; */
   padding: 17px 20px;
   text-decoration: none;
 }
-.active:hover{
+
+.active:hover {
   background-color: rgba(255, 255, 0, 0.5);
 }
-.column{
+
+.column {
   float: left;
   width: 30%;
   margin: 20px;
   background-size: contain;
 }
-.card img{
-  width:100% ;
+
+.card img {
+  width: 100%;
   height: auto;
 }
 
-.card{
+.card {
   background-color: rgb(235, 235, 235);
 }
-button{
+
+button {
   width: 100%;
   height: 25px;
   background-color: rgb(58, 51, 51);
   color: white;
 }
+
 #copyright {
   text-align: center;
   padding: 10px;
   color: black;
   font-size: 14px;
 }
+
 .container {
   width: auto;
-  height:  auto;
+  height: auto;
 }
 
 #footer {
@@ -93,6 +102,7 @@ button{
   width: 100%;
   color: white;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -104,10 +114,12 @@ button{
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
+
 .popup {
   margin: 70px auto;
   padding: 5px;
@@ -117,12 +129,17 @@ button{
   position: relative;
   transition: all 5s ease-in-out;
 }
-.popup img{ width: 100%;}
+
+.popup img {
+  width: 100%;
+}
+
 .popup h2 {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -133,11 +150,42 @@ button{
   text-decoration: none;
   color: #333;
 }
-.popup .close:hover {color: #06D85F;}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
 }
-#openPopUp{
+
+#openPopUp {
   color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 1px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.switch-mode {
+  display: inline-block;
+}
+
+.box {
+  height: 80px;
+}
+
+nav {
+  height: 30px;
+  text-align: left;
+  padding: 20px 0px;
 }

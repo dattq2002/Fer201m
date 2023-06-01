@@ -2,7 +2,7 @@ import React from "react";
 import { Players } from "../shared/ListOfPlayers";
 import { useState } from "react";
 export default function Player(){
-  const [player, setPlayer] = useState([]);
+  const [players, setPlayer] = useState([]);
     return (
     <div className='container'>
         {Players.map((player)=>(
@@ -17,11 +17,11 @@ export default function Player(){
         ))}
         <div id ='popup1' className='overlay'>
           <div className='popup'>
-            <img src={player.img}/>
-            <h2>{player.name}</h2>
+            <img src={players.img}/>
+            <h2>{players.name}</h2>
             <a className='close' href='#'>&times;</a>
             <div className='content'>
-              {player.info}
+              {players.info}
             </div>
           </div>
         </div>
