@@ -1,0 +1,195 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+div.title{
+  background-color: black;
+  text-align: left;
+  padding: 10px 0px;
+}
+
+.back-ground {
+  background-color: rgb(138, 85, 85);
+  text-align: center;
+  padding: 20px 0px;
+}
+.active {
+  color: aliceblue;
+  padding: 17px 20px;
+  text-decoration: none;
+}
+.active:hover{
+  background-color: rgba(92, 92, 46, 0.5);
+}
+.column{
+  float: left;
+  width: 30%;
+  margin: 20px;
+  background-size: contain;
+}
+.card img{
+  width:400px ;
+  height: 300px;
+}
+.card{
+  background-color: none;
+}
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+#copyright {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  font-size: 14px;
+}
+.container {
+  width: auto;
+  height:  auto;
+}
+
+#footer {
+  position: absolute;
+  bottom: -270px;
+  background-color: rgb(167, 167, 3);
+  width: 100%;
+  color: white;
+}
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+body, html{height: 100%;}
+.container{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.letter {
+  font-size: 40px;
+  margin: 0 5px;
+  transform-origin: center;
+  transform: translateX(15px);
+}
+
+#letter1{animation: spin 3s infinite 100ms linear, appear 2s;}
+#letter2{animation: spin 3s infinite 225ms linear, appear 2s;}
+#letter3{animation: spin 3s infinite 350ms linear, appear 2s;}
+#letter4{animation: spin 3s infinite 475ms linear, appear 2s;}
+#letter5{animation: spin 3s infinite 475ms linear, appear 2s;}
+#letter6{animation: spin 3s infinite 475ms linear, appear 2s;}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes spin{
+  from {
+    transform: rotate(0deg) translateX(15px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(15px) rotate(-360deg); 
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+body{
+  /* white-space: pre; */
+  font-family: 'Fascinate Inline';
+}
