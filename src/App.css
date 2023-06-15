@@ -96,6 +96,7 @@ button {
   color: white;
 }
 
+/* -------Popup-------- */
 .overlay {
   position: fixed;
   top: 0;
@@ -157,52 +158,47 @@ button {
   color: white;
 }
 
-/* .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu .brand-logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.menu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  margin-right: 10px;
-}
-
-.menu .switch-color {
-  position: relative;
-}
-
-.menu .switch-mode {
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-.menu .player-card {
-  margin-right: auto;
-}
-
-
-.menu .switch-mode {
-  margin-left: auto;
-} */
-
+/* ---------Navigation------- */
 .menu{
   justify-content: space-between;
   align-items: center;
 }
 .menu .brand-logo{
   left: 1rem;
+}
+/* --------Detail---------- */
+
+.badge{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: auto;
+  top: 150px;
+}
+.background-name-image{
+  background-color: rgb(222, 212, 212);
+}
+.background-info-cost{
+  background-color: rgb(223, 223, 223);
+}
+.container{
+  background-color: rgb(194, 190, 190);
+}
+.container #club{
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+}
+.product-price{
+  text-align: left;
+  font-weight: bolder;
+  color: rgb(151, 151, 58);
+}
+.container p #abc{
+  text-align: justify;
+  color: gray;
 }
