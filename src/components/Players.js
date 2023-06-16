@@ -2,10 +2,12 @@ import React from "react";
 import { Players } from "../shared/ListOfPlayers";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Icon, CardTitle, Row, Col, Card, Container  } from "react-materialize";
 export default function Player(){
   const [players, setPlayer] = useState([]);
     return (
-    <div className='container'>
+    <Container className='container-player'>
+      <Row>
         {Players.map((player)=>(
            <div className='column'>
            <div className='card'>
@@ -18,6 +20,7 @@ export default function Player(){
            </div>
          </div>
         ))}
+        </Row>
         <div id ='popup1' className='overlay'>
           <div className='popup'>
             <img src={players.img}/>
@@ -28,6 +31,7 @@ export default function Player(){
             </div>
           </div>
         </div>
-    </div>
+        
+    </Container>
   )
 }

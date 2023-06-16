@@ -37,7 +37,7 @@
     transform: rotate(360deg);
   }
 }
-
+/* ------------------------------------------------------------------ */
 div.title {
   background-color: black;
   text-align: left;
@@ -76,6 +76,13 @@ button {
   color: white;
 }
 
+
+
+.container-player{
+  width: auto;
+  height: auto;
+}
+/* -------footer------- */
 #copyright {
   text-align: center;
   padding: 10px;
@@ -83,18 +90,16 @@ button {
   font-size: 14px;
 }
 
-.container {
-  width: auto;
-  height: auto;
+.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: greenyellow;
+  padding: 0;
+  text-align: center;
 }
 
-#footer {
-  position: absolute;
-  bottom: -270px;
-  background-color: rgb(167, 167, 3);
-  width: 100%;
-  color: white;
-}
 
 /* -------Popup-------- */
 .overlay {
@@ -168,22 +173,28 @@ button {
 }
 /* --------Detail---------- */
 
+#video {
+  position: fixed;
+  top: 37rem;
+  left: 95rem;  
+}
 .badge{
-  background-color: red;
+  /* background-color: red; */
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 1.5rem;
   width: 200px;
   height: auto;
   position: absolute;
-  left: auto;
-  top: 150px;
+  left: 31%;
+  top: 33rem;
 }
 .background-name-image{
   background-color: rgb(222, 212, 212);
 }
 .background-info-cost{
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(7, 205, 152);
+  color: white;
 }
 .container{
   background-color: rgb(194, 190, 190);
@@ -196,9 +207,44 @@ button {
 .product-price{
   text-align: left;
   font-weight: bolder;
-  color: rgb(151, 151, 58);
+  color: white;
 }
 .container p #abc{
   text-align: justify;
   color: gray;
+}
+.product-tumb{
+  margin-left: 200px;
+
+}
+.product-tumb img{
+  width: 50rem;
+}
+/* -----------About------------- */
+
+.custom-div {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+/* --------------modalCase-------------- */
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/* -------------News-------------- */
+.box-news{
+  background-color: rgb(184, 173, 173);
+  margin: 30px;
+}
+.box-news p{
+  text-align: center;
+  font-weight: 200;
+  font-size: larger;
 }

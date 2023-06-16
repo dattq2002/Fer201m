@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeConText';
 import { Link } from 'react-router-dom';
-import { Navbar, NavItem, Icon } from 'react-materialize';
+import { Navbar, Icon } from 'react-materialize';
 export default function Navigation() {
     const { theme, toggle, dark } = useContext(ThemeContext);
     return (
