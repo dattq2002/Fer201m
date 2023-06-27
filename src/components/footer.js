@@ -1,16 +1,13 @@
-import React, { Component } from "react";
-export default class Footer extends Component {
-    render() {
+import React from 'react'
+// import { useContext } from 'react'
+// import { ThemeContext } from './ThemeContext'
+export default function Footer() {
+    // const { theme, toggle, dark } = useContext(ThemeContext)
         return (
-            <div id='footer'>
-                <footer className="foot">
-
-                    <div id="copyright">
-                        &copy; copyright © 2023
-                    </div>
-
-                </footer>
-            </div>
+            <footer >
+                <nav id='background'>
+                <div className='foot'><p >copyright © 2022</p></div>
+                </nav>
+            </footer>
         )
-    };
-}
+    }

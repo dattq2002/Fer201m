@@ -2,74 +2,92 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ------------------column---------------------------- */
+.projects {
+  background: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.projects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.projects .box-container .box {
+  cursor: initial;
+}
+
+.projects .box-container .box .image {
+  height: 20rem;
+}
+
+.projects .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.projects .box-container .box .content {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-div.title{
-  background-color: black;
-  text-align: left;
-  padding: 10px 0px;
-}
-
-.back-ground {
-  background-color: rgb(138, 85, 85);
+.projects .box-container .box .content .info {
+  padding: 5px 10px;
   text-align: center;
-  padding: 20px 0px;
 }
-.active {
-  color: aliceblue;
-  padding: 17px 20px;
-  text-decoration: none;
+
+.projects .box-container .box h3 {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  margin: 10px 0;
 }
-.active:hover{
-  background-color: rgba(92, 92, 46, 0.5);
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
-.column{
-  float: left;
+
+.column {
   width: 30%;
   margin: 20px;
-  background-size: contain;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.card img{
-  width:400px ;
+
+.card-image {
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card{
-  background-color: none;
+
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 14px;
+  color: #888;
+} */
+/* -----------------button-------------------------- */
 .glow-on-hover {
-  width: 220px;
+  width: 100%;
   height: 50px;
   border: none;
   outline: none;
@@ -126,74 +144,22 @@ div.title{
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
-}
-#copyright {
-  text-align: center;
-  padding: 10px;
-  color: black;
-  font-size: 14px;
-}
-.container {
-  width: auto;
-  height:  auto;
-}
-
-#footer {
-  position: absolute;
-  bottom: -270px;
-  background-color: rgb(167, 167, 3);
+} */
+/* --------------Footer---------------------- */
+.foot {
+  position: relative;
   width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: gray;
+  margin-top: 10px;
+  padding: 5px 0;
   color: white;
 }
-/* *{
-  margin: 0;
-  padding: 0;
-} */
-/* body, html{height: 100%;}
-.container{
-  display: flex;
-  justify-content: center;
-  border: 1px solid black;
-  width: 100%;
+#background{
+  background-color: yellowgreen;
 }
-
-.letter {
-  font-size: 40px;
-  margin: 0 5px;
-  transform-origin: center;
-  transform: translateX(15px);
-}
-
-#letter1{animation: spin 3s infinite 100ms linear, appear 2s;}
-#letter2{animation: spin 3s infinite 225ms linear, appear 2s;}
-#letter3{animation: spin 3s infinite 350ms linear, appear 2s;}
-#letter4{animation: spin 3s infinite 475ms linear, appear 2s;}
-#letter5{animation: spin 3s infinite 475ms linear, appear 2s;}
-#letter6{animation: spin 3s infinite 475ms linear, appear 2s;}
-
-@keyframes appear{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
-@keyframes spin{
-  from {
-    transform: rotate(0deg) translateX(15px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(15px) rotate(-360deg); 
-  }
-}
-@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
-body{ */
-  /* white-space: pre; */
-  /* font-family: 'Fascinate Inline';
-} */
-
+/* ---------------Popup---------------------------- */
 .overlay {
   position: fixed;
   top: 100px;
@@ -245,4 +211,34 @@ body{ */
 .overlay img{
   width:400px ;
   height: 300px;
+}
+.product-tumb-details img{
+  width: 90rem;
+  height: 40rem;
+}
+
+/* --------Navigation---------- */
+.task{
+  background-color: black;
+}
+.task .switch {
+  margin-right: 20px;
+}
+
+.active {
+  color: rgb(37, 169, 225);
+  padding: 17px 20px;
+  text-decoration: none;
+}
+
+.active:hover {
+  background-color: rgb(162, 186, 55);
+}
+
+.menu{
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .brand-logo{
+  left: 1rem;
 }
