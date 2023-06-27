@@ -1,7 +1,7 @@
 export const films = [
     {
         id: 1,
-        image: "assets/images/StarWars.jpg",
+        image: "https://images6.alphacoders.com/613/thumb-1920-613328.jpg",
         Title: "Star Wars: Episode IV - A New Hope",
         Year: "1977",
         Nation: "USA",
@@ -11,7 +11,7 @@ export const films = [
     },
     {
         id: 2,
-        image: "assets/images/FastAndFurious9.jpg",
+        image: "https://phimz.vip/proxy/image/aHR0cHM6Ly9pLmltZ3VyLmNvbS8vZ3I5S0JPVi5qcGc=&w=1280&h=720&name=qua-nhanh-qua-nguy-hiem-10.jpg",
         Title: "Fast & Furious 9: Huyền thoại tốc độ",
         Year: "2023",
         Nation: "USA",
@@ -21,7 +21,7 @@ export const films = [
     },
     {
         id: 3,
-        image: "assets/images/Avengers.png",
+        image: "https://s3.cloud.cmctelecom.vn/tinhte2/2019/04/4629787_cover_endgamex-1.jpg",
         Title: "Avengers: Cuộc chiến vô cực",
         Year: "2018",
         Nation: "USA",
@@ -31,7 +31,7 @@ export const films = [
     },
     {
         id: 4,
-        image: "assets/images/DoctorStrange.jpg",
+        image: "https://cdnimg.vietnamplus.vn/t660/uploaded/tpuohuo/2022_05_05/doctorstrange2.jpg",
         Title: "Phù thủy tối thượng",
         Year: "2016",
         Nation: "USA",
@@ -41,7 +41,7 @@ export const films = [
     },
     {
         id: 5,
-        image: "assets/images/Annabelle.jpg",
+        image: "https://i.vietgiaitri.com/2019/6/27/nhung-ly-do-khien-annabelle-ac-quy-tro-ve-xung-dang-la-sieu-pham-9f82ed.jpeg",
         Title: "Annabelle: Ác quỷ trở về",
         Year: "2019",
         Nation: "USA",
@@ -51,7 +51,7 @@ export const films = [
     },
     {
         id: 6,
-        image: "assets/images/Gonjiam.jpg",
+        image: "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2021/09/23/j8tb792c_1920x1080-gonjiambenhvienmaam.jpg",
         Title: "Gonjiam: Bệnh viện ma ám",
         Year: "2018",
         Nation: "Korea",
@@ -61,7 +61,7 @@ export const films = [
     },
     {
         id: 7,
-        image: "assets/images/All_of_Us_Are_Dead.jpg",
+        image: "https://img6.thuthuatphanmem.vn/uploads/2022/04/21/cac-dien-vien-all-of-us-are-dead_093911044.jpg",
         Title: "Ngôi trường xác sống (All of Us Are Dead)",
         Year: "2022",
         Nation: "Korea",
@@ -71,7 +71,7 @@ export const films = [
     },
     {
         id: 8,
-        image: "assets/images/bong-dung-trung-so.jpg",
+        image: "https://i.ytimg.com/vi/XZKeCnsf_WA/maxresdefault.jpg",
         Title: "Bỗng dưng trúng số",
         Year: "2022",
         Nation: "Korea",
@@ -81,7 +81,7 @@ export const films = [
     },
     {
         id: 9,
-        image: "assets/images/ipman.jpg",
+        image: "https://znews-photo.zadn.vn/w660/Uploaded/kbd_pilk/2019_09_24/ipmanc.jpg",
         Title: "Diệp Vấn",
         Year: "2008",
         Nation: "China",

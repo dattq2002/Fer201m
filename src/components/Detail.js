@@ -11,21 +11,23 @@ export default function Detail() {
     });
     let cost = film.cost.toLocaleString();
     return (
-        <div className="container-details">
-            <div className="product-card">
-                <div className="product-tumb-details">
-                    <img src={`../${film.image}`} alt="" />
-                </div>
-                <div className="background-info-cost">
-                    <div className="product-details">
-                        <a onClick={() => setIsOpen(true)} className="btn-floating halfway-fab waves-effect waves-light red" id="video">
-                            video
-                        </a>
-                        {isOpen && <ModalCase setIsOpen={setIsOpen} film={film} />}
-                        <p id='movie'>{film.Title}</p>
-                        <div className="product-price">Market value: € {cost}</div>
-                        <p>{film.info}</p>
-                        <div className="product-bottom-details"></div>
+        <div id="detail-box">
+            <div className="container-details">
+                <div className="product-card">
+                    <div className="product-tumb-details">
+                        <img src={film.image} alt="" />
+                    </div>
+                    <div className="background-info-cost">
+                        <div className="product-details">
+                            <p className="button-watchvideo"><button onClick={() => setIsOpen(true)}>Watch Trailer </button></p>
+                            {isOpen && <ModalCase setIsOpen={setIsOpen} film={film} />}
+                            <div id='movie'>
+                                <p>{film.Title}</p>
+                                <p>Market value: € {cost}</p>
+                                <p>{film.info}</p>
+                            </div>
+                            <div className="ct-bottom-details"></div>
+                        </div>
                     </div>
                 </div>
             </div>
