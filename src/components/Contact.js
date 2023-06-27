@@ -13,16 +13,34 @@ export default function Contact() {
                 <TextInput id='TextInput-41' label='Email' validate />
                 <Select id='Select-46' multiple={false} onChange={function noRefCheck() { }} value="">
                     <option disabled value=''>
-                        Choose your favourite nation
+                        Choose your favourite video
                     </option>
                     <option disabled value='1'>
-                        England
+                    Star Wars: Episode IV - A New Hope
                     </option>
                     <option disabled value='2'>
-                        France
+                    Star Wars: Episode IV - A New Hope
                     </option>
                     <option disabled value='3'>
-                        Spain
+                    Avengers: Cuộc chiến vô cực
+                    </option>
+                    <option disabled value='4'>
+                    Phù thủy tối thượng
+                    </option>
+                    <option disabled value='5'>
+                    Phù thủy tối thượng
+                    </option>
+                    <option disabled value='6'>
+                    Gonjiam: Bệnh viện ma ám
+                    </option>
+                    <option disabled value='7'>
+                    Ngôi trường xác sống (All of Us Are Dead)
+                    </option>
+                    <option disabled value='8'>
+                    Bỗng dưng trúng số
+                    </option>
+                    <option disabled value='9'>
+                    Diệp Vấn
                     </option>
                 </Select>
                 <Textarea id="Textarea-28" label="Your content"/>
